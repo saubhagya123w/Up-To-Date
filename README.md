@@ -1,1 +1,2 @@
-# Up-To-Date
+•	Description: "Up-to-Date" is a news streaming platform that offers a diverse range of news to its audience. The platform includes several features, such as categories and geolocations, which provide a map of Asia with buttons representing different countries. The website offers news from 48 Asian countries, making it a comprehensive source of information. 
+•	Technologies Used: HTML ,CSS , javascript. 
