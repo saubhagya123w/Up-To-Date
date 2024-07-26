@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP TO DATE</title>
+    <link rel="stylesheet" href="NEWS FRONT PH.CSS">
+
+</head>
+
+<body>
+
+    <ul>
+
+
+        <li>
+            <a href="#">Categories</a>
+            <ul CLASS="dropdown">
+                <li><a class="hover-link nav-item" id="breaking news" onclick="onNavItemClick('breaking news')"
+                        STYLE="CURSOR:POINTER;">Breaking News</a></li>
+                <li><a class="hover-link nav-item" id="political" onclick="onNavItemClick('political')"
+                        STYLE="CURSOR:POINTER;">Political</a></li>
+                <li><a class="hover-link nav-item" id="BUSINESS AND FINANCE"
+                        onclick="onNavItemClick('BUSINESS AND FINANCE')" STYLE="CURSOR:POINTER;">Business & Finance</a>
+                </li>
+                <li><a class="hover-link nav-item" id="Science & Technology"
+                        onclick="onNavItemClick('Science & Technology')" STYLE="CURSOR:POINTER;">Science &
+                        Technology</a></li>
+                <li><a class="hover-link nav-item" id="health" onclick="onNavItemClick('health')"
+                        STYLE="CURSOR:POINTER;">Health</a></li>
+                <li><a class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')"
+                        STYLE="CURSOR:POINTER;">Entertainment</a></li>
+                <li><a class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')"
+                        STYLE="CURSOR:POINTER;">Sports</a></li>
+                <li><a class="hover-link nav-item" id="environment" onclick="onNavItemClick('environment')"
+                        STYLE="CURSOR:POINTER;">Environment</a></li>
+                <li><a class="hover-link nav-item" id="education" onclick="onNavItemClick('education')"
+                        STYLE="CURSOR:POINTER;">Education</a></li>
+                <li><a class="hover-link nav-item" id="crime and laws" onclick="onNavItemClick('crime and laws')"
+                        STYLE="CURSOR:POINTER;">Crime & Law's</a></li>
+                <li><a class="hover-link nav-item" id="weather" onclick="onNavItemClick('weather')"
+                        STYLE="CURSOR:POINTER;">Weather</a></li>
+                <li><a class="hover-link nav-item" id="lifestyl" onclick="onNavItemClick('lifestyl')"
+                        STYLE="CURSOR:POINTER;">Lifestyl</a></li>
+                <li><a class="hover-link nav-item" id="social issues" onclick="onNavItemClick('social issues')"
+                        STYLE="CURSOR:POINTER;">Social Issues</a></li>
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </li>
+        <li>
+            <a href="#">Geolocation's</a>
+            <ul class="dropdown">
+                
+                <li><a href="asia.html">Asian Stories</a></li>
+            </ul>
+        </li>
+        <li> <a href="news.html" onclick="reload()" class="india" xlink:title="India">
+                <img src="00002-removebg-preview.png" alt="india news"></a></li>
+              
+        <li>
+           
+            <a href="#">About Us</a>
+            <ul CLASS="dropdown">
+                <li><a href="members.html">Member's</a></li>
+                <li><a href="mentor.html">Mentor</a></li>
+        </ul>
+        </li>
+        <li> <a href="feedback.html">Feedback</a></li>
+       
+        
+    </ul>
+    <div class="container">
+        <form action="#" method="get" class="search-form">
+            <input type="text" name="search" placeholder="Search..." id="search-text">
+            <button class="searchButton" type="submit" id="search-button">Search</button>
+        </form>
+    </div>
+    <img src="yyyy.png" alt="UTD image" width="1135px" height="400px" class="centre">
+
+
+
+
+    <script src="news2.js"></script>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                    saepe
+                    quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+   
+</body>
+
+</html>
