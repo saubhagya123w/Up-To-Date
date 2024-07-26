@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    div {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+      <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+    </form>
+  </div>
+
+  <!-- Load Firebase scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore-compat.js"></script>
+
+  <script>
+    // Replace with your Firebase project config
+    const firebaseConfig = {
+      apiKey: "AIzaSyCv5tWcemW4IRhF0pOvNHPO-8V2YchxK10",
+      authDomain: "feedback-10099.firebaseapp.com",
+      projectId: "feedback-10099",
+      storageBucket: "feedback-10099.appspot.com",
+      messagingSenderId: "1097079373080",
+      appId: "1:1097079373080:web:43e2f9eb8c63d08153f26d"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firestore
+    const db = firebase.firestore();
+
+    // Define submitFeedback function
+    function submitFeedback() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const feedback = document.getElementById('feedback').value;
+
+  // Add feedback to Firestore with the desired order
+  db.collection('feedback').add({
+    name: name,
+    email: email,
+    feedback: feedback,
+    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+  })
+  .then(() => {
+    console.log('Feedback submitted successfully!');
+    alert('Feedback submitted successfully!');
+    document.getElementById('feedbackForm').reset();
+  })
+  .catch((error) => {
+    console.error('Error adding feedback: ', error);
+    alert('An error occurred. Please try again.');
+  });
+}
+
+
+  </script>
+</body>
+</html>

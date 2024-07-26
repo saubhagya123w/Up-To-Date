@@ -1,0 +1,45 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+   background-color: rgb(44, 121, 236);
+
+}
+svg path{
+    fill:rgb(33, 241, 134);
+    stroke:black;
+    stroke-width: 0.35;
+    margin-top: 260px;
+    
+
+}
+svg path:hover{
+    fill:rgb(25, 137, 25);
+    transition: 0.10s;
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+ul{
+    float:inline-start;
+    background-color: #21435c;
+    width: 1150px;
+    padding: 0px;
+    height: 65px;
+    transform: translateY(-2px);
+   
+    
+}
+ul li{
+    position: fixed;
+    display: inline-block;
+  
+}
+ul li:hover{
+    transform: translateY(-2px);
+}
+a img:hover{
+    transform: translateY(3px);
+
+}

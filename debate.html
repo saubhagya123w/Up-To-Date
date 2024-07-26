@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body{
+            padding: 150px;
+        }
+    .flip-card {
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; 
+        float:left;
+        box-shadow: 1px 1px 8px #555555;
+        
+        margin: 11px;
+        
+        
+        cursor: pointer;
+      }
+      .flip-card:hover{
+        box-shadow: 1px 1px 8px #555555;
+      }
+     
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        box-shadow: 1px 1px 8px #555555;
+      }
+      
+     
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; 
+        backface-visibility: hidden;
+      }
+      
+     
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      
+      .flip-card-back {
+        background-color: #00A9FF;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      #button:hover{
+        background-color: aquamarine;
+        
+      }
+     
+      </style>
+</head>
+<body>
+   
+    <img src="debimage.png" style="width:1130px; height:500px; ">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Animal Abuse</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Artificial Intelligance</h1> 
+             <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; margin-top: 35px;">Start Debating</button>
+          </div>
+        </div>
+      </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Aadhar</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Child Labour</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Corruption</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Cast</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Demonetisation</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Elections</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Education</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Farming</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>GST</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Health</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Hindutva</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Infrastructure</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Job Opportunities</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Kashmir Riots</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Politics</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Population</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Pollution</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Reservation</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Recession</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Secularism</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>security</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Sports</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bebiimage.png" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Terrorism</h1> 
+            <button id="button" style="width:100px;cursor:pointer; height:40px; border-radius: 6px;background-color:#89CFF3;color:black; bottom: 20px; margin-top: 70px;">Start Debating</button>
+            
+          </div>
+        </div>
+      </div>
+     
+     
+      
+      
+      
+</body>
+</html>
